@@ -1,7 +1,20 @@
-<? 
-require_once "validador_acesso.php";
-  
-?>
+<?php require_once "validador_acesso.php"; ?>
+
+<?php 
+//Abrir o arqivo .hd
+$arquivo = fopen('arquivo.hd','r');
+
+//enquanto houver registous ou linhas a serem recperados
+while (!feof($arquivo) ) { //testa pelo fim de m arquivo
+  //lihas
+  $registo = fgets($arquivo);
+  echo $registo ."<br />"
+}
+
+ ?>
+
+
+
 <html>
   <head>
     <meta charset="utf-8" />
